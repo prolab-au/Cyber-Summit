@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROLAB Cyber Summit 2026 | PROLAB yepyeni bir zirve ile karşınızda</title>
+  <meta name="description" content="PROLAB'ın Proje Laboratuvarı öğrenci topluluğunun ilk siber güvenlik zirvesi. 12–13 Aralık 2026, hibrit ve ücretsiz: eğitimler, CTF yarışması ve konferanslar.">
+  <meta name="theme-color" content="#0a1224">
+
+  <!-- Fonts are optional: the page falls back to system fonts if they fail to load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <canvas id="matrix" class="matrix" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="PROLAB Cyber Summit 2026 ana sayfa">
+        <span class="header-mark">PROLAB <span>Cyber Summit</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menüyü aç/kapat</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="#hakkinda" data-track="nav-etkinlik">Etkinlik</a></li>
+          <li><a href="#katilim" data-track="nav-katilim">Katılım</a></li>
+          <li><a href="#program" data-track="nav-program">Program</a></li>
+          <li><a href="#ctf" data-track="nav-ctf">CTF</a></li>
+          <li><a href="#sss" data-track="nav-sss">SSS</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small" href="#kayit" data-track="cta-kayit-header">Başvuru yap</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <!-- HERO (centered) -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-center">
+        <p class="hero-kicker">PROLAB Cyber Summit 2026</p>
+        <h1 id="hero-title" class="hero-title">PROLAB yepyeni bir zirve ile karşınızda</h1>
+        <p class="hero-lead">
+          Proje Laboratuvarı öğrenci topluluğumuzun ilk siber güvenlik zirvesi. Eğitimler, takım bazlı CTF yarışması ve konferanslar iki gün boyunca bir arada.
+        </p>
+        <ul class="hero-facts" aria-label="Kısa bilgiler">
+          <li>12–13 Aralık 2026</li>
+          <li>Ücretsiz katılım</li>
+          <li>Fiziksel + online</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kayit" data-track="cta-kayit-hero">Başvuru yap</a>
+          <a class="btn btn-ghost" href="#hakkinda" data-track="cta-etkinlik-hero">Etkinliği incele</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT FACTS -->
+    <section class="facts" aria-label="Etkinlik bilgileri">
+      <div class="container">
+        <dl class="facts-grid">
+          <div class="fact">
+            <dt>Tarih</dt>
+            <dd>12–13 Aralık 2026</dd>
+            <p>1. gün eğitimler, 2. gün CTF ve konferanslar.</p>
+          </div>
+          <div class="fact">
+            <dt>Yer</dt>
+            <dd>Hibrit</dd>
+            <p>Fiziksel katılım ve online katılım planlanıyor. Mekân bilgisi yakında duyurulacak.</p>
+          </div>
+          <div class="fact">
+            <dt>Katılım</dt>
+            <dd>Ücretsiz</dd>
+            <p>CTF takımları 2–4 kişi. Planlanan kapasite 60 takıma kadar.</p>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section" id="hakkinda" aria-labelledby="hakkinda-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="hakkinda-title">Öğrenciler tarafından, öğrenciler için</h2>
+          <p>PROLAB Cyber Summit, siber güvenliğe yeni başlayanların öğrenip denemesi ve sektörü tanıması için tasarlandı.</p>
+        </div>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>Siber güvenlik eğitimleri</h3>
+            <p>Web, ağ, red team, blue team, kriptografi ve mobil güvenlik konularında planlanan üç saatlik eğitimler.</p>
+          </article>
+          <article class="card">
+            <h3>Takım bazlı CTF</h3>
+            <p>2–4 kişilik takımlar, altı saat boyunca güvenlik problemleri çözüp puan toplar.</p>
+          </article>
+          <article class="card">
+            <h3>Konferanslar</h3>
+            <p>Savunma sanayiinden bankacılığa, yapay zekâdan kariyere uzanan konuşmalar ve bilgi paylaşımı.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO CAN JOIN -->
+    <section class="section section-alt" id="katilim" aria-labelledby="katilim-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="katilim-title">Kimler katılabilir?</h2>
+          <p>Etkinlik öncelikle üniversite öğrencilerine yönelik. Kesin katılım koşulları başvurular açıldığında duyurulacak.</p>
+        </div>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>Yeni başlayanlar</h3>
+            <p>Siber güvenliği merak eden ve nereden başlayacağını arayan öğrenciler.</p>
+          </article>
+          <article class="card">
+            <h3>CTF meraklıları</h3>
+            <p>Takımını kurup yarışmak, öğrendiklerini denemek isteyenler.</p>
+          </article>
+          <article class="card">
+            <h3>Kariyer planlayanlar</h3>
+            <p>Mezuniyet sonrası bu alanda çalışmayı düşünen ve sektörü yakından görmek isteyenler.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section class="section" id="program" aria-labelledby="program-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="program-title">Program</h2>
+          <p>Aşağıdakiler planlanan içeriklerdir. Saatler, salonlar ve eğitmenler henüz kesinleşmedi.</p>
+        </div>
+
+        <div class="tabs">
+          <div class="tab-list" role="tablist" aria-label="Gün seçimi">
+            <button class="tab" role="tab" id="tab-day1" aria-controls="panel-day1" aria-selected="true" type="button" data-track="program-gun-1">
+              <span class="tab-day">1. Gün</span>
+              <span class="tab-meta">12 Aralık · Eğitimler</span>
+            </button>
+            <button class="tab" role="tab" id="tab-day2" aria-controls="panel-day2" aria-selected="false" tabindex="-1" type="button" data-track="program-gun-2">
+              <span class="tab-day">2. Gün</span>
+              <span class="tab-meta">13 Aralık · CTF ve konferanslar</span>
+            </button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-day1" aria-labelledby="tab-day1" tabindex="0">
+            <p class="panel-intro">Planlanan altı eğitim konusu. Her biri yaklaşık üç saat sürecek şekilde tasarlanıyor.</p>
+            <ul class="topic-grid">
+              <li>Web Uygulama Güvenliği ve Sızma Testi</li>
+              <li>Ağ ve Sistem Güvenliği</li>
+              <li>Red Team ve Etik Sızma Testi</li>
+              <li>Blue Team: Savunma ve Olay Müdahalesi</li>
+              <li>Kriptografi ve CTF Problemleri</li>
+              <li>Mobil Uygulama Güvenliği: Android</li>
+            </ul>
+            <p class="notice">Zaman çizelgesi, salonlar ve eğitmenler daha sonra duyurulacak. Oturumların art arda mı yoksa paralel mi yapılacağı da henüz belli değil.</p>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-day2" aria-labelledby="tab-day2" tabindex="0" hidden>
+            <p class="panel-intro">İkinci gün dört bölümden oluşuyor.</p>
+            <ol class="steps">
+              <li><strong>Takım bazlı CTF</strong><span>Altı saatlik yarışma.</span></li>
+              <li><strong>Kısa ara</strong><span>Yarışma ile konuşmalar arasında geçiş.</span></li>
+              <li><strong>Siber güvenlik konuşmaları</strong><span>Sektörden konferanslar.</span></li>
+              <li><strong>Ödüller ve kapanış</strong><span>Sonuçlar ve final.</span></li>
+            </ol>
+            <p class="notice">Başlangıç ve bitiş saatleri henüz kesinleşmedi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTF -->
+    <section class="section section-alt" id="ctf" aria-labelledby="ctf-title">
+      <div class="container split">
+        <div class="split-copy">
+          <h2 id="ctf-title">CTF nedir?</h2>
+          <p>Capture The Flag (CTF), bilerek zafiyetli hazırlanmış görevleri çözerek “bayrak” denen gizli metinleri bulduğun bir yarışmadır. Her doğru bayrak puan kazandırır.</p>
+          <p>PROLAB Cyber Summit'te 2–4 kişilik takımlar altı saat boyunca farklı kategorilerdeki problemleri çözecek. Yeni başlayanlar için ısınma soruları da bulunması hedefleniyor.</p>
+          <div class="status-box">
+            <p class="status-label">Yarışma platformu</p>
+            <p class="status-text">Yarışma, bu sitenin dışında CTFd üzerinde yapılacak. Bağlantı hazır olduğunda burada paylaşılacak.</p>
+            <a id="ctfLink" class="btn btn-disabled" aria-disabled="true" data-track="ctf-platform">Yarışma platformu yakında duyurulacak</a>
+          </div>
+        </div>
+        <div class="split-side">
+          <h3 class="side-title">Planlanan kategoriler</h3>
+          <ul class="chip-list">
+            <li>Web Güvenliği</li>
+            <li>Kriptografi</li>
+            <li>Adli Bilişim (Forensics)</li>
+            <li>OSINT</li>
+            <li>Tersine Mühendislik</li>
+            <li>Ağ Güvenliği</li>
+          </ul>
+          <p class="fine-note">Kategori listesi kesin değildir.</p>
+
+          <div class="puzzle">
+            <h3 class="puzzle-title">Örnek soru: ısınma</h3>
+            <p class="puzzle-text">Kriptografi kategorisinden bir örnek. Bu metin ROT13 ile şifrelendi. Bayrak biçimi PROLAB{...} şeklinde. Bulabilir misin?</p>
+            <pre class="puzzle-code" aria-label="Şifreli metin"><code>CEBYNO{plore_fhzzvg}</code></pre>
+            <button class="btn btn-ghost btn-small" type="button" id="flagToggle" aria-expanded="false" aria-controls="flagAnswer" data-track="ornek-soru-cozum">Çözümü göster</button>
+            <div id="flagAnswer" class="puzzle-answer" hidden>
+              <p>Her harf alfabede 13 adım kaydırıldı. Çözülmüş hâli:</p>
+              <pre class="puzzle-code puzzle-code-solved"><code>PROLAB{cyber_summit}</code></pre>
+            </div>
+            <p class="puzzle-note">Bu soru yalnızca örnektir; yarışma sorularından biri değildir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFERENCES -->
+    <section class="section" id="konferanslar" aria-labelledby="konf-title">
+      <div class="container split">
+        <div class="split-copy">
+          <h2 id="konf-title">Konferanslar</h2>
+          <p>Konuşma konuları önerilmiş durumda. Konuşmacı listesi kesinleştiğinde isimler ve kurumlar burada yayınlanacak.</p>
+          <p class="notice">Konuşmacılar yakında açıklanacak.</p>
+        </div>
+        <ul class="talk-list">
+          <li>Savunma Sanayii ve Siber Güvenlik</li>
+          <li>Bankacılıkta Siber Güvenlik ve Dolandırıcılık Tespiti</li>
+          <li>Yapay Zekâ Çağında Siber Güvenlik</li>
+          <li>Blockchain, Kripto Varlıklar ve Güvenlik</li>
+          <li>Siber Güvenlik Kariyeri ve Gerçek Dünya Deneyimleri</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="section section-alt" id="kayit" aria-labelledby="kayit-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="kayit-title">Başvurular</h2>
+          <p>İki ayrı başvuru var: zirveye katılım ve CTF. Formlar hazır olduğunda butonlar burada aktifleşecek.</p>
+        </div>
+        <div class="apply-grid">
+          <article class="card apply-card">
+            <h3>CTF takım başvurusu</h3>
+            <p>CTF'e 2–4 kişilik takımlar halinde katılabilirsin. Katılım ücretsiz; fiziksel ve online seçenekleri planlanıyor.</p>
+            <dl class="capacity">
+              <div><dt>Fiziksel katılım</dt><dd>20 takıma kadar</dd></div>
+              <div><dt>Online katılım</dt><dd>40 takıma kadar</dd></div>
+              <div class="capacity-total"><dt>Toplam planlanan</dt><dd>60 takıma kadar</dd></div>
+            </dl>
+            <a id="ctfApplyLink" class="btn btn-disabled" aria-disabled="true" data-track="basvuru-ctf">Başvurular yakında açılacak</a>
+          </article>
+          <article class="card apply-card">
+            <h3>Zirve katılım başvurusu</h3>
+            <p>12–13 Aralık'taki eğitimlere ve konferanslara katılmak için bu formu doldur. CTF'e takım olarak katılacaksan ayrıca CTF başvurusu yapman gerekir.</p>
+            <a id="summitApplyLink" class="btn btn-disabled" aria-disabled="true" data-track="basvuru-zirve">Başvurular yakında açılacak</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="sss" aria-labelledby="sss-title">
+      <div class="container faq-wrap">
+        <div class="section-head">
+          <h2 id="sss-title">Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details data-track="sss-nedir">
+            <summary>PROLAB Cyber Summit nedir?</summary>
+            <p>PROLAB'ın Proje Laboratuvarı öğrenci topluluğunun düzenlediği ilk siber güvenlik zirvesi. Eğitimler, takım bazlı CTF yarışması ve konferanslardan oluşan, iki günlük ücretsiz bir etkinlik.</p>
+          </details>
+          <details data-track="sss-tarih">
+            <summary>Ne zaman yapılacak?</summary>
+            <p>12–13 Aralık 2026.</p>
+          </details>
+          <details data-track="sss-yer">
+            <summary>Nerede yapılacak?</summary>
+            <p>Mekân bilgisi yakında duyurulacak. Etkinlik hibrit olarak planlandığı için online katılım seçeneği de olacak.</p>
+          </details>
+          <details data-track="sss-ucret">
+            <summary>Katılım ücretsiz mi?</summary>
+            <p>Evet, katılım ücretsiz.</p>
+          </details>
+          <details data-track="sss-kimler">
+            <summary>Kimler katılabilir?</summary>
+            <p>Etkinlik öncelikle siber güvenliğe ilgi duyan üniversite öğrencilerine, özellikle yeni başlayanlara yönelik. Kesin katılım koşulları başvurular açıldığında duyurulacak.</p>
+          </details>
+          <details data-track="sss-takim">
+            <summary>CTF takımında kaç kişi olabilir?</summary>
+            <p>Takımlar 2–4 kişiden oluşur.</p>
+          </details>
+          <details data-track="sss-deneyim">
+            <summary>CTF deneyimi gerekli mi?</summary>
+            <p>Etkinlik öncelikle başlangıç seviyesindeki öğrencilere yönelik planlanıyor. Kesin koşullar başvurularla birlikte duyurulacak.</p>
+          </details>
+          <details data-track="sss-basvuru">
+            <summary>Başvurular ne zaman açılacak?</summary>
+            <p>Başvurular yakında açılacak. Tarih belli olduğunda bu sayfada duyurulacak.</p>
+          </details>
+          <details data-track="sss-online">
+            <summary>Online yarışma nerede yapılacak?</summary>
+            <p>Yarışma CTFd platformunda yapılacak. Platform adresi yakında duyurulacak.</p>
+          </details>
+          <details data-track="sss-cerez">
+            <summary>Bu site çerez kullanıyor mu?</summary>
+            <p>Tercihini hatırlamak için bir çerez kullanırız. Ziyaretçi sayısını ölçen analiz yalnızca sen kabul edersen çalışır. Ayrıntılar çerez politikasında.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-label">Düzenleyen</p>
+        <a class="brand" href="#top" aria-label="Sayfanın başına dön">
+          <img class="brand-logo brand-logo-footer" src="images/prolab-logo.png" alt="PROLAB Proje Laboratuvarı öğrenci topluluğu logosu" height="64">
+          <span class="brand-wordmark">PROLAB</span>
+        </a>
+        <p class="footer-event">PROLAB Cyber Summit 2026</p>
+        <p class="footer-date">12–13 Aralık 2026</p>
+      </div>
+      <nav aria-label="Alt menü">
+        <p class="footer-label">Sayfa</p>
+        <ul class="footer-nav">
+          <li><a href="#hakkinda">Etkinlik</a></li>
+          <li><a href="#katilim">Katılım</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#ctf">CTF</a></li>
+          <li><a href="#konferanslar">Konferanslar</a></li>
+          <li><a href="#kayit">Başvurular</a></li>
+          <li><a href="#sss">SSS</a></li>
+          <li><button class="link-button" type="button" data-open-policy>Çerez politikası</button></li>
+          <li><button class="link-button" type="button" data-open-consent>Çerez tercihleri</button></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-label">Topluluk ve iletişim</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/prolab_au/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" data-track="sosyal-instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://github.com/prolab-au/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" data-track="sosyal-github">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/proje-laboratuvari/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" data-track="sosyal-linkedin">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@prolabtoplulugu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok" data-track="sosyal-tiktok">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3v10.5a4.5 4.5 0 1 1-4.5-4.5"/><path d="M15 3c.4 2.6 2.2 4.3 5 4.6"/></svg>
+          </a>
+        </div>
+        <a class="footer-mail" href="mailto:a.akpinar1371@gmail.com" data-track="iletisim-eposta">a.akpinar1371@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 PROLAB. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div id="cookieBanner" class="cookie-banner" role="region" aria-label="Çerez tercihleri" hidden>
+    <div class="cookie-text">
+      <p class="cookie-title">Çerezler</p>
+      <p>Tercihini hatırlamak için zorunlu bir çerez kullanırız. Kabul edersen ayrıca ziyaretçi sayısını ve etkileşimleri (buton, menü, program sekmeleri) anonim olarak ölçeriz. Reddedersen analiz hiç çalışmaz.</p>
+      <button class="link-button" type="button" data-open-policy>Çerez politikasını oku</button>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-small" type="button" id="cookieReject">Reddet</button>
+      <button class="btn btn-primary btn-small" type="button" id="cookieAccept">Kabul et</button>
+    </div>
+  </div>
+
+  <!-- COOKIE POLICY DIALOG -->
+  <dialog id="policyDialog" class="policy-dialog" aria-labelledby="policy-title">
+    <div class="policy-head">
+      <h2 id="policy-title">Çerez politikası</h2>
+      <button class="btn btn-ghost btn-small" type="button" id="policyClose">Kapat</button>
+    </div>
+    <div class="policy-body">
+      <p>Bu site, PROLAB Proje Laboratuvarı öğrenci topluluğunun PROLAB Cyber Summit 2026 etkinliği için hazırladığı bilgilendirme sitesidir. Bu politika, sitede hangi çerezlerin ve benzeri teknolojilerin kullanıldığını açıklar.</p>
+
+      <h3>Çerez nedir?</h3>
+      <p>Çerezler, bir siteyi ziyaret ettiğinde tarayıcında saklanan küçük veri parçalarıdır.</p>
+
+      <h3>Hangi çerezleri kullanıyoruz?</h3>
+      <p><strong>Zorunlu: tercih çerezi (prolab_consent).</strong> Çerez tercihini 180 gün boyunca hatırlar. Bu olmadan seçimin her ziyarette yeniden sorulur. Kimlik bilgisi içermez. Aynı bilgi tarayıcının yerel depolamasına da yazılabilir.</p>
+      <p><strong>Analiz (yalnızca onayınla).</strong> Kabul edersen GoatCounter analiz hizmeti yüklenir. Sitenin kaç kişi tarafından ziyaret edildiğini, ziyaretçilerin hangi sayfadan geldiğini, hangi ülke, tarayıcı ve ekran boyutunu kullandığını ve hangi bölümlerle etkileşim kurulduğunu (örneğin başvuru butonları, program sekmeleri, SSS, sosyal medya bağlantıları) toplu istatistik olarak görürüz. Ad, e-posta gibi kimlik bilgileri toplanmaz ve tek tek ziyaretçiler takip edilmez.</p>
+
+      <h3>Reddedersen ne olur?</h3>
+      <p>Analiz hizmeti yüklenmez ve etkileşimlerin sayılmaz. Siteyi her zamanki gibi kullanabilirsin.</p>
+
+      <h3>Çerez dışındaki harici kaynaklar</h3>
+      <p>Site yazı tipleri için Google Fonts kullanır. Sayfa açıldığında tarayıcın Google sunucularına bağlanır ve IP adresin bu bağlantı sırasında Google tarafından görülebilir. Bu bağlantı çerez onayından bağımsızdır. Sayfadaki Instagram, GitHub, LinkedIn ve TikTok bağlantılarına tıkladığında ilgili platformların kendi gizlilik ve çerez kuralları geçerli olur.</p>
+
+      <h3>Tercihini nasıl değiştirirsin?</h3>
+      <p>Sayfanın altındaki “Çerez tercihleri” bağlantısından kararını istediğin zaman değiştirebilirsin. Çerezleri tarayıcı ayarlarından da silebilirsin. Daha önce kabul ettiysen ve sonra reddedersen, analiz bir sonraki sayfa yenilemesinden itibaren çalışmaz.</p>
+
+      <h3>Haklarınız ve iletişim</h3>
+      <p>Kişisel verilerinle ilgili 6698 sayılı KVKK kapsamındaki haklarını kullanmak ve sorularını iletmek için bize yazabilirsin: <a href="mailto:a.akpinar1371@gmail.com">a.akpinar1371@gmail.com</a></p>
+      <p>Başvuru formları açıldığında, formlarda toplanacak kişisel veriler için ayrıca bir aydınlatma metni yayınlanacaktır.</p>
+      <p class="fine-note">Son güncelleme: 22 Ekim 2026</p>
+    </div>
+  </dialog>
+</body>
+</html>
