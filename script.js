@@ -7,8 +7,10 @@
    Leave a URL as "" to keep its button disabled.
    ---------------------------------------------------------- */
 const EVENT_CONFIG = {
-  registrationUrl: "",              // e.g. the Google Form link
-  registrationOpenLabel: "Takım kaydını başlat",
+  ctfApplicationUrl: "",            // CTF team application form (e.g. Google Form)
+  ctfApplicationLabel: "CTF başvurusunu aç",
+  summitApplicationUrl: "",         // summit participation application form
+  summitApplicationLabel: "Zirve başvurusunu aç",
   ctfUrl: "",                       // e.g. the CTFd platform link
   ctfOpenLabel: "Yarışma platformuna git"
 };
@@ -42,7 +44,8 @@ function activateLink(element, url, label) {
 }
 
 function initEventLinks() {
-  activateLink(document.getElementById("registerLink"), EVENT_CONFIG.registrationUrl, EVENT_CONFIG.registrationOpenLabel);
+  activateLink(document.getElementById("ctfApplyLink"), EVENT_CONFIG.ctfApplicationUrl, EVENT_CONFIG.ctfApplicationLabel);
+  activateLink(document.getElementById("summitApplyLink"), EVENT_CONFIG.summitApplicationUrl, EVENT_CONFIG.summitApplicationLabel);
   activateLink(document.getElementById("ctfLink"), EVENT_CONFIG.ctfUrl, EVENT_CONFIG.ctfOpenLabel);
 }
 
@@ -216,7 +219,7 @@ function readConsent() {
 
 function saveConsent(value) {
   const maxAge = CONSENT_DAYS * 24 * 60 * 60;
-  document.cookie = CONSENT_KEY + "=" + value + "; max-age=" + maxAge + "; path=/; SameSite=Lax";
+  document.cookie = CONSENT_KEY + "=" + value + "; max-age=" + maxAge + "; path=/; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
   try { localStorage.setItem(CONSENT_KEY, value); } catch (e) { /* storage may be blocked */ }
 }
 
